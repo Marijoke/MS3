@@ -4,7 +4,11 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-#This links to the html pages to avoid writing html in this doc
+"""
+App route links to the html pages to avoid writing html in this doc.
+html files located in templates folder
+"""
+
 @app.route("/")
 def index():
     return render_template("index.html")
