@@ -1,59 +1,116 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# All booked
+What is all booked
 
-Welcome Marijoke,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+![alt text](insert file path here "Multi device mock up")
+[Please see the deployed site here](https://marijoke.github.io/MS3/)
+## UX
+This website is for:
+- People who 
+- People who want 
+- People interested 
+- People with a specific interest
 
-## Gitpod Reminders
+The website is easy to manoeuvre using buttons and the drop-down menu. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+I created the back of my cards to tie in with the theme and the brand created. This presents a clean uniformed look to the player. 
 
-`python3 -m http.server`
+### Wireframes
+I created wireframes using [Balsamiq](https://balsamiq.com/)
 
-A blue button should appear to click: _Make Public_,
+[Please see Wireframes here.](INSERT LINK HERE)
 
-Another blue button should appear to click: _Open Browser_.
+### Fonts 
+The fonts chosen for the website are:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Colours
+I used [Coolers](https://coolors.co/) to look up suitable colour schemes. I wanted colours that complimented each other but were also bold, warm and inviting.
 
-A blue button should appear to click: _Make Public_,
+![alt text](ADD LINK TO PALETTE "Colours")
 
-Another blue button should appear to click: _Open Browser_.
+## User Stories 
+- As an existing 
+- As a potential 
+- As an existing 
+- As a potential
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Features
+### Existing Features
+- Collapsible Navigation menu – allows players to move between pages with ease regardless of the size of their device.
+- Footer – features social media links to the Mari Mems social pages for direct contact with the company. Mari Mems uses their socials to provide players with updates and the newest memory games. 
+- Mobile First design – allows users to view the website across multiple platforms without compromising usability.
+- Alternative text - All images including feature alternative text to ensure website is accessible for those with visual impairments.
+- Memory game - Created using JavaScript to create a board with cards that flip over and stay up when matched
+- Read more/less button - This allows players to get more information on what they are interested in rather than filling the screen with large amounts of text. 
+### Features Left to Implement
+- Additional levels - The game currently has three levels
+- Additional memory games - I have created a memory brand so would like to add other types of memory games.
+- Points stystem  - so players can see how many points they have earned over the course of the game.
+- Timer - To show players how long it took them to solve the puzzle. 
+- Scoreboard - They are then able to challenge themselves by trying to beat their last time.
+- Compatibility for Safari - Found a lont of bugs using the site on apple devices.
+## Technologies Used
+- HTML5 
+- CSS3
+- 
+- [Bootstrap 4.5.3](https://getbootstrap.com/)
+    - Used to simplify layouts and create consistency of design while enabling responsiveness. 
+- [Balsamiq](https://balsamiq.com/)
+    - Created Wireframes for the project prior to development
+- [Github](https://github.com/) & [Gitpod](https://www.gitpod.io/)
+    - Used to write, store and view code
+- [Google fonts](https://fonts.google.com/)
+    - Used to select fonts for the project
+- [Font awesome V5.15.2](https://fontawesome.com/icons?d=gallery)
+    -Used for the social media icons and the brain icon on the home page. 
+- [Coverr](https://coverr.co/)
+    - Used for pictures of the people in shown in the game. 
+- [Pexels](https://www.pexels.com/)
+    - Used for pictures of the people in shown in the game.   
 
-To log into the Heroku toolbelt CLI:
+## Testing
+My Code has been checked using:
+- [Markup Validation Service](https://validator.w3.org/#validate_by_input)
+- [CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+- Google developer tool, Lighthouse. The report for this can be found [here](https://photos.app.goo.gl/bhJNqFHBcJVFbaPy7)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+My project has responded well to testing in various browsers on across multiple devices. 
+- The project was tested in:
+    - [Google Chrome](https://www.google.com/intl/en_uk/chrome/)
+    - [Firefox](https://www.mozilla.org/en-GB/firefox/)
+    - [Safari](https://www.apple.com/uk/safari/)
+    - [Duck Duck go](https://duckduckgo.com/)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+For more testing across multiple devices please see the [Mari Mems Tests](/workspace/MSP2-MemoryGame/MariMemsTests.md)
 
-## Updates Since The Instructional Video
+## Deployment
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+My project was deployed using GitHub Pages
+- Logged into my account on [gitHub.com](https://github.com/)
+- I located my project repository 
+- Selected settings
+- Scrolled to find 'GitHub Pages' 
+- I selected Master as the source in the dropdown menu
+- Pressed save
+- Page is automatically refreshed.
+- I scrolled down back to 'GitHub Pages' where the new link is available.
+- Clicking the link takes you to the deployed website 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Local Deployment, run using Gitpod
+-	Add the Gitpod browser extension on Google chrome
+-	Login to your GitHub account
+-	Locate the project repository and select the green Gitpod button which will open a workspace. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
+## Credits
+### Content 
+- I used [Free code camp - Memory Game in Vanilla JavaScript](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImU4NzMyZGIwNjI4NzUxNTU1NjIxM2I4MGFjYmNmZDA4Y2ZiMzAyYTkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2MTUxMzI5NTQsImF1ZCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjEwMjA5NzgzODA0MDk3MzIwMzExMyIsImVtYWlsIjoibWFyaWFtYWphZGFtdUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXpwIjoiMjE2Mjk2MDM1ODM0LWsxazZxZTA2MHMydHAyYTJqYW00bGpkY21zMDBzdHRnLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwibmFtZSI6Ik1hcmlhbSBBIiwicGljdHVyZSI6Imh0dHBzOi8vbGg0Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tdkMwV2l5OWZBeVkvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQUEvQU1adXVjbjhpMW0zRWZ5MWxaY0JPU2J3MmUtdFVCZ2VWQS9zOTYtYy9waG90by5qcGciLCJnaXZlbl9uYW1lIjoiTWFyaWFtIiwiZmFtaWx5X25hbWUiOiJBIiwiaWF0IjoxNjE1MTMzMjU0LCJleHAiOjE2MTUxMzY4NTQsImp0aSI6IjUxN2NhM2NlMGU2MWVlMGI1ZmFjZDQ5N2FhZjhkNjNhNDIzYzk1NWMifQ.h9FNNd2hDpEaOhkIA6BOsriT5HJk0vQ4O6oOj6SGXaI9lIJ_iiVOaYGB_x_cyB1bwy5S7PBlzwShAmBa5O0egUFQRiMsoo8xQr4oMZl9MdrWEZf-YK6VL_lstrUIU7MtjvSZf53XcfyoAsq6INFm5oFvPi-LBh6b_GH-3fIHnQAd76c-LtnzE8PTUKZrc6nF0c_SCKTPdeYIFt7FqHeggX0X2MQZR31c1fNcxZYvL-fnl4YchuvRerp9GjgR8jW5XhZuMaEbyUJWRYCKHJuMp_nYCBH_xxx6JAqdRmYWrUMsELc03-YkJRjnSBuKaHyllS1U6nwx17aMA_Aya2WVRA) to create a template for my project.
+- I used parts of my [Milestone 1 project](https://marijoke.github.io/Milestone-project-Habiba/) to guide me when I found errors in my code.
+- I used [Bootstrap](https://stackoverflow.com/questions/18474564/bootstrap-3-navbar-with-logo) to help with help the logo in the Navigation Bar
+- [Readme template](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md#existing-features) helped me write my Readme file.
+- I used [W3 to create the read more button](https://www.w3schools.com/howto/howto_js_read_more.asp)
+### Media
+-  YouTube Tutorial for building a Memory game [here](https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw)
+### Acknowledgements
+- My sister a player of memory games helped me with my user stories 
+- My tutor for the advice before, during and at the end of this project, especialy when I made a mess of my code.
+- [Disclosure](https://www.disclosureofficial.com/) for making music that keeps me productive
