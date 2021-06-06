@@ -23,6 +23,11 @@ def contact():
     return render_template("contact.html")
 
 
+@app.route("/post")
+def post():
+    return render_template("post.html")
+
+
 """
 (__main__) is the name of the default module in Python.
 the app will be run using the statements in (__main__)
