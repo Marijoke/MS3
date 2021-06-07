@@ -17,11 +17,9 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-"""
-@app.route("/")
+@app.route("/index")
 def index():
     return render_template("index.html")
-"""
 
 
 @app.route("/get_books")
@@ -30,7 +28,6 @@ def get_books():
     return render_template("books.html", books=books)
 
 
-"""
 @app.route("/about")
 def about():
     return render_template("about.html")
@@ -39,7 +36,6 @@ def about():
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
-"""
 
 
 if __name__ == "__main__":
