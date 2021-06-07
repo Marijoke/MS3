@@ -1,11 +1,4 @@
 {% extends "base.html" %}
 {% for books in books %}
-    {{ books.title }}
-	{{ books.ISBN }}
-	{{ books.description }}
-	{{ books.author }}
-	{{ books.rating: int 1-10 }}
-	{{ books.reviewed_by: (session.username) }}
-	{{ books.date_of_review: datetime.now }}
-
+    {{ books.books_title }}
 {% endfor %}
