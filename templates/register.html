@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<form>
+<form method="POST" action="{{ url_for('register') }}">
     <h3 class="center-align">Register</h3>
     <!-- username -->
         <div class="form-group">
