@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form>
+    <h3 class="center-align">Register</h3>
+    <!-- username -->
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="username" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter Username" class="validate">
+            <small id="usernameHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
+        </div>
+    <!-- password -->
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" class="validate">
+        </div>
+    <!-- register -->
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="check">
+            <label class="form-check-label" for="check">Confirm</label>
+         </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  {% endblock %}
