@@ -1,5 +1,7 @@
 import os
-from flask import Flask, render_template
+from flask import (
+    Flask, flash, render_template,
+    redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 if os.path.exists("env.py"):
@@ -17,21 +19,23 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-@app.route("/index")
+@app.route("/")
 def index():
     return render_template("index.html")
-
-
-@app.route("/get_books")
-def get_books():
-    books = mongo.db.books.find()
-    return render_template("books.html", books=books)
 
 
 @app.route("/about")
 def about():
     return render_template("about.html")
 
+
+@app.route("/books")
+#@app.route("/get_books")
+#def get_books():
+def books():
+    #books = mongo.db.books.find()
+    return render_template("books.html" )
+#books=books
 
 @app.route("/contact")
 def contact():
