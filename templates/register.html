@@ -6,20 +6,18 @@
     <!-- username -->
         <div class="form-group">
             <label for="username">Username</label>
-            <input type="username" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter Username" class="validate">
+            <input type="username" name="username" class="form-control" id="username" minlength="5"
+            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" placeholder="Enter Username" class="validate" required>
             <small id="usernameHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
         </div>
     <!-- password -->
         <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Password" class="validate">
+            <input type="password" name="password" class="form-control" id="password" minlength="5"
+            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" placeholder="Password" class="validate">
         </div>
     <!-- register -->
-        <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="check">
-            <label class="form-check-label" for="check">Confirm</label>
-         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Register</button>
   </form>
 
   {% endblock %}

@@ -2,10 +2,10 @@
 {% block content %}
 
 <h2>Books</h2>
-    {% for book in books %}
-        {{ book._id }} <br>
+    {% for books in books %}
+        {{ task_manager.books_id }} <br>
         {{ book.book_title }} <br>
-        {{ book.ISBN }} <br>
+        {{ books.ISBN }} <br>
         {{ book.book_description }} <br>
         {{ book.author }} <br>
         {{ book.book_rating }} <br>
