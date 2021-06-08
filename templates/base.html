@@ -31,7 +31,8 @@
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('books') }}">Books</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('register') }}">Register Now</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('contact') }}">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('login') }}">Log in</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#">Log out</a></li>
                 </ul>
             </div>
         </div>
@@ -49,6 +50,18 @@
             </div>
         </div>
     </header>
+    <section>
+        <!-- flash messages -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="row flashes">
+                        <h4 class="center-align">{{ message }}</h4>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </section>
     <!-- Main Content-->
         {% block content %}
         {% endblock %}
