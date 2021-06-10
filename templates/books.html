@@ -9,7 +9,7 @@
         {{ book.book_description }} <br>
         {{ book.author }} <br>
         {{ book.book_rating }} <br>
-        {{ book.reviewed_by }} <br>
+        {{ book.reviewed_by ["user"] }} <br>
         {{ book.date_of_review }} <br>
     {% endfor %}
 
