@@ -93,7 +93,7 @@ def profile(username):
     return redirect(url_for("login"))
 
 
-# Add a new into database
+# Add a new book to db
 @app.route("/add_book", methods=["GET", "POST"])
 def add_book():
     if request.method == "POST":
@@ -108,6 +108,10 @@ def add_book():
         mongo.db.books.insert_one(book)
         return redirect("/profile/<username>")
 
+@app.route("/view_book/<book_name>")
+def view_book(book_name):
+    book = mongo.db.books.find_one({"_id": ObjectId(book_name)})
+    return render_template("view_book.html", book=book)
 
 @app.route("/logout")
 def logout():
