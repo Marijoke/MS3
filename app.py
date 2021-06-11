@@ -83,7 +83,7 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
-    # grab the session user's username from db
+    # session user's username from mongo db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
@@ -108,10 +108,30 @@ def add_book():
         mongo.db.books.insert_one(book)
         return redirect("/profile/<username>")
 
-@app.route("/view_book/<book_name>")
-def view_book(book_name):
-    book = mongo.db.books.find_one({"_id": ObjectId(book_name)})
+
+# allow user to see book
+@app.route("/view_book/<book_title>")
+def view_book(book_title):
+    book = mongo.db.books.find_one({"_id": ObjectId(book_title)})
     return render_template("view_book.html", book=book)
+
+
+# Users can edit book
+@app.route("/edit_book/<book_id>", methods=["GET", "POST"])
+def edit_book(book_id):
+    if request.method == "POST":
+        edited_book = {
+            "book_title": request.form.get("book_title"),
+            "author": request.form.get("author"),
+            "img_url": request.form.get("img_url"),
+            "review": request.form.get("review"),
+            "created_by": session["user"]
+        }
+        mongo.db.books.update({"_id": ObjectId(book_id)}, edited_book)
+
+    book = mongo.db.books.find_one({"_id": ObjectId(book_id)})
+    return render_template("view_book.html", book=book)
+
 
 @app.route("/logout")
 def logout():
