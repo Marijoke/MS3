@@ -25,12 +25,11 @@ mongo = PyMongo(app)
 def index():
     return render_template("index.html")
 
-
 @app.route("/get_books")
 def get_books():
     books = mongo.db.books.find()
     return render_template("books.html", books=books)
- 
+
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -104,7 +103,7 @@ def logout():
     # remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
-    return redirect(url_for("index"))
+    return redirect(url_for("login"))
 
 
 if __name__ == "__main__":
