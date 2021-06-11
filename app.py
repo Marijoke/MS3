@@ -93,9 +93,20 @@ def profile(username):
     return redirect(url_for("login"))
 
 
-@app.route("/contact")
-def contact():
-    return render_template("contact.html")
+# Add a new into database
+@app.route("/add_book", methods=["GET", "POST"])
+def add_book():
+    if request.method == "POST":
+        book = {
+            "book_title": request.form.get("book_title"),
+            "author": request.form.get("author"),
+            "book_description": request.form.get("book_description"),
+            "img_url": request.form.get("img_url"),
+            "review": request.form.get("review"),
+            "reviewed_by": session["user"]
+        }
+        mongo.db.books.insert_one(book)
+        return redirect("/profile/<username>")
 
 
 @app.route("/logout")
