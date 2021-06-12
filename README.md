@@ -1,9 +1,12 @@
 # All booked
-What is all booked
-
+All booked is an online platform for people who love to read. 
+Our users are able to create an account that gives them access to a self curated collection of books. 
+Users are able create personalised book lists that can be shared with other users. All booked stems from a book and discussion club that I used to attend.  
 
 ![alt text](insert file path here "Multi device mock up")
-[Please see the deployed site here](https://marijoke.github.io/MS3/)
+[Please see the deployed site on Heroku here](https://all-booked-ms3.herokuapp.com/)
+[Please see the repository on github here](https://marijoke.github.io/all-booked-ms3/)
+
 ## UX
 This website is for:
 - People who 
