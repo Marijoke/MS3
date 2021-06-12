@@ -19,9 +19,9 @@ This website is for:
 
 
 ### Wireframes
-I created wireframes using [Balsamiq](https://balsamiq.com/)
+I created wireframes using [Mockplus](https://www.mockplus.com/?home=1)
 
-[Please see Wireframes here.](INSERT LINK HERE)
+[Please see Wireframes here.](https://photos.app.goo.gl/ijiVN3WHbHJBuBJD6)
 
 ### Fonts 
 The fonts chosen for the website are:
@@ -63,7 +63,7 @@ I used [Coolers](https://coolors.co/) to look up suitable colour schemes. I want
 - Flask
 - jQuery
 - 
-- [Bootstrap 4.5.3](https://getbootstrap.com/)
+- [Marterialize 1.0.0](https://materializecss.com/)
     - Used to simplify layouts and create consistency of design while enabling responsiveness. 
 - [Balsamiq](https://balsamiq.com/)
     - Created Wireframes for the project prior to development
@@ -72,17 +72,15 @@ I used [Coolers](https://coolors.co/) to look up suitable colour schemes. I want
 - [Google fonts](https://fonts.google.com/)
     - Used to select fonts for the project
 - [Font awesome V5.15.2](https://fontawesome.com/icons?d=gallery)
-    -Used for the social media icons and the brain icon on the home page. 
-- [Coverr](https://coverr.co/)
-    - Used for pictures of the people in shown in the game. 
+    -Used for mutiple icons throughout the site 
 - [Pexels](https://www.pexels.com/)
-    - Used for pictures of the people in shown in the game.   
+    - Used for background picture
 
 ## Testing
 My Code has been checked using:
 - [Markup Validation Service](https://validator.w3.org/#validate_by_input)
 - [CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-- Google developer tool, Lighthouse. The report for this can be found [here](https://photos.app.goo.gl/bhJNqFHBcJVFbaPy7)
+- Google developer tool, Lighthouse. The report for this can be found [here](https://photos.app.goo.gl/H9SSpePbkK4aVqLZ7)
 
 My project has responded well to testing in various browsers on across multiple devices. 
 - The project was tested in:
@@ -95,32 +93,41 @@ For more testing across multiple devices please see the [All booked gets tested]
 
 ## Deployment
 
-My project was deployed using GitHub Pages
+My project was deployed using GitHub Pages and Heroku
+#### GitHub
 - Logged into my account on [gitHub.com](https://github.com/)
 - I located my project repository 
 - Selected settings
-- Scrolled to find 'GitHub Pages' 
+- Selected pages on the lefthand side
 - I selected Master as the source in the dropdown menu
 - Pressed save
-- Page is automatically refreshed.
-- I scrolled down back to 'GitHub Pages' where the new link is available.
-- Clicking the link takes you to the deployed website 
+- Page is automatically refreshed 
+- I return to 'Pages' where the new link is available.
+- Clicking the link takes you to the deployed website. However, as it is already deployed on Heroku all you can see in the README.
 
 Local Deployment, run using Gitpod
 -	Add the Gitpod browser extension on Google chrome
 -	Login to your GitHub account
--	Locate the project repository and select the green Gitpod button which will open a workspace. 
+-	Locate the project repository and select the green Gitpod button which will open a workspace.
+
+### Heroku
+- Logged into my account on [Heroku](https://www.heroku.com/).
+- Select 'Create new app'.
+- I put in the of my app and chose the region closest to me.
+- In 'Settings' I selected 'Config Vars' 
+- I added the details from my env.py file. This includes the IP, Port, 
+Secret key, MongoDB name and URI.
+- I selected the 'Deploy' option.
+- Under 'Deployment method' select the GitHub option to connect to your GitHub repository.
+- Select Automatic deploys from the main branch and click 'Deploy Branch'.
 
 ## Credits
 ### Content 
-- I used [Free code camp - Memory Game in Vanilla JavaScript](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImU4NzMyZGIwNjI4NzUxNTU1NjIxM2I4MGFjYmNmZDA4Y2ZiMzAyYTkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2MTUxMzI5NTQsImF1ZCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjEwMjA5NzgzODA0MDk3MzIwMzExMyIsImVtYWlsIjoibWFyaWFtYWphZGFtdUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXpwIjoiMjE2Mjk2MDM1ODM0LWsxazZxZTA2MHMydHAyYTJqYW00bGpkY21zMDBzdHRnLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwibmFtZSI6Ik1hcmlhbSBBIiwicGljdHVyZSI6Imh0dHBzOi8vbGg0Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tdkMwV2l5OWZBeVkvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQUEvQU1adXVjbjhpMW0zRWZ5MWxaY0JPU2J3MmUtdFVCZ2VWQS9zOTYtYy9waG90by5qcGciLCJnaXZlbl9uYW1lIjoiTWFyaWFtIiwiZmFtaWx5X25hbWUiOiJBIiwiaWF0IjoxNjE1MTMzMjU0LCJleHAiOjE2MTUxMzY4NTQsImp0aSI6IjUxN2NhM2NlMGU2MWVlMGI1ZmFjZDQ5N2FhZjhkNjNhNDIzYzk1NWMifQ.h9FNNd2hDpEaOhkIA6BOsriT5HJk0vQ4O6oOj6SGXaI9lIJ_iiVOaYGB_x_cyB1bwy5S7PBlzwShAmBa5O0egUFQRiMsoo8xQr4oMZl9MdrWEZf-YK6VL_lstrUIU7MtjvSZf53XcfyoAsq6INFm5oFvPi-LBh6b_GH-3fIHnQAd76c-LtnzE8PTUKZrc6nF0c_SCKTPdeYIFt7FqHeggX0X2MQZR31c1fNcxZYvL-fnl4YchuvRerp9GjgR8jW5XhZuMaEbyUJWRYCKHJuMp_nYCBH_xxx6JAqdRmYWrUMsELc03-YkJRjnSBuKaHyllS1U6nwx17aMA_Aya2WVRA) to create a template for my project.
-- I used parts of my [Milestone 1 project](https://marijoke.github.io/Milestone-project-Habiba/) to guide me when I found errors in my code.
-- I used [Bootstrap](https://stackoverflow.com/questions/18474564/bootstrap-3-navbar-with-logo) to help with help the logo in the Navigation Bar
+- I used [Henrique's Book world ](https://github.com/Henriqueperoni/CI-MS3-Books-World) as inspiration in regards to the layout and help make sure I was on track.
+- I used the Code institute mini project tutorial and source code to help build my project
 - [Readme template](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md#existing-features) helped me write my Readme file.
-- I used [W3 to create the read more button](https://www.w3schools.com/howto/howto_js_read_more.asp)
-### Media
--  YouTube Tutorial for building a Memory game [here](https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw)
 ### Acknowledgements
-- My sister a player of memory games helped me with my user stories 
-- My tutor for the advice before, during and at the end of this project, especialy when I made a mess of my code.
-- [Disclosure](https://www.disclosureofficial.com/) for making music that keeps me productive
+- My sister Habiba being up during the late nights when I was stressing
+- Spencer the best for always being so willing to help me even when I go nuclear and lose/mess up my code. Or in this case change the whole layout. 
+- The baby cat Moon who did his very best to code along even when he was more a distraction that a help.
+- My cousin Nina for starting a wonderful book club named *all booked* a few years ago that I miss. 

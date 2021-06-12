@@ -143,15 +143,6 @@ footer {
     background: #fff;
 }
 
-.intro-img {
-    position: absolute;
-    right: 4%;
-    bottom: 8%;
-    height: 400px;
-    width: 400px;
-    -o-object-fit: contain;
-       object-fit: contain;
-}
 
 .intro-text {
     position:absolute;
@@ -196,17 +187,7 @@ footer {
     overflow-y: scroll;
 }
 
-.container-logos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-}
+
 
 .logo {
     font-family: "Nunito", sans-serif;
@@ -224,11 +205,6 @@ footer {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%)
-}
-
-.container-ilustration img {
-    width: 80%;
-    height: auto;
 }
 
 .container-sign h2 {
@@ -295,12 +271,6 @@ footer {
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
-}
-
-.logo-img {
-    width: 50px;
-    height: 50px;
-    margin-top: -5px;
 }
 
 .books,
@@ -864,11 +834,6 @@ footer {
         background: url("/static/images/new-bg.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-    }
-
-    .intro-img {
-        height: 500px;
-        width: 500px;
     }
     .book-heading img {
         height: 500px;

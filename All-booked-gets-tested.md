@@ -20,5 +20,10 @@ Please find the full testing document [here](https://1drv.ms/x/s!AiwsYx99ZOMqgtV
 
 ## Bugs
 - Navigation menu would not open
-    - Js file was called scripts rather than script.
+    - js file was called scripts rather than script.
+- Mongodb wasn't working when I tried to pull data from the database
+    - there was a URL reference that was wrong causing data to be sent but not recieved. 
+- Background image on Tablet sometime comes up short when turn portrait. 
+- strange broken image shows up on the mobile size
+    - have bot managed to locate it outside of Google developer tools. 
     

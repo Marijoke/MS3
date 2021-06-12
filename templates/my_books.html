@@ -42,8 +42,6 @@
         
 	<div class="general-container row">
         <div class="container-logos">
-            <a href="{{ url_for('index') }}"><img class="logo-img hide-on-med-and-up"
-                    src="{{ url_for('static', filename='images/logo2.png')}}" alt="Logo"></a>
             <a href="{{ url_for('index') }}">
                 <h3 class="white-text logo hide-on-small-only">All booked</span></h3>
             </a>
@@ -68,10 +66,5 @@
                 {% endif%}
             {% endfor %}
         </div>
-
-        <!-- Quotes -->
-        {% for quote in quotes %}
-            <p class="quotes deep-purple-text">"{{ quote.quote_text }}" {{ quote.quote_author }}</p>
-        {% endfor %}
 	</div>
 {% endblock %}
