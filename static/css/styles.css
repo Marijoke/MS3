@@ -5108,58 +5108,6 @@ textarea.form-control-lg {
   margin: 0.25rem;
 }
 
-/*view list*/
-.container-book-lists h1 {
-  font-size: 3rem;
-  font-family: 'Nunito';
-  font-weight: 600;
-  letter-spacing: -1px;
-  margin: 0 0 20px 0;
-}
-
-.container-book-lists h3 {
-  font-size: 1rem;
-  font-style: italic;
-  margin: 0;
-}
-
-.books-list img {
-  height: 305px;
-  width: 220px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
-          box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
-}
-
-.book-title p {
-  max-width: 220px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  margin: 0 auto;
-  text-align: start;
-}
-
-.book-title p:first-child {
-  margin-top: 5px;
-  font-size: 0.9rem;
-}
-
-.book-title {
-  margin-bottom: 15px;
-}
-
-.book-cover {
-  min-height: 375px !important;
-}
-
-.modal-books form {
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
