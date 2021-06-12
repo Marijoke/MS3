@@ -23,4 +23,51 @@
                             </label>
                         </div>
                     </div>
+
+                    <!-- Submit Button -->
+                    <div class="row">
+                        <button type="submit" class="btn-sign-up white-text deep-orange darken-3">Save  <i class="fas fa-save white-text"></i></button>
+                    </div>
+                </form>
+            </div>
+            <!-- Close Modal -->
+            <button class="close-modal">x</button>
+        </div>
+    </div>
+	<div class="general-container row">
+        <div class="container-logos">
+            <a href="{{ url_for('index') }}"><h3 class="white-text logo hide-on-small-only">All booked</h3></a>
+        </div>
+
+        <button id="add-book"><i class="fas fa-plus deep-orange-text text-darken-3"></i></button>
+
+        <!-- Books list -->
+        <div class="container-book-lists row">
+            
+            {% if book_lists|length > 0 %}
+            <ul class="col s12 m10 offset-m1 l8 offset-l2">
+                {% for list in book_lists %}
+                    <li>
+                        <div class="list-title white-text logo deep-orange darken-3">
+                            <div>
+                                <i class="valign-wrapper fas fa-angle-right"></i>
+                                <a class="white-text" href="{{ url_for('view_list', list_name=list._id) }}"><h2 class="list-names">{{ list.list_name }}</h2></a>
+                            </div>
+                            <a class="btn-small white deep-orange-text text-darken-3" href="{{ url_for('view_list', list_name=list._id) }}">See books</a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+                <!-- Message for new users that have not added any books to their list -->
+                <div class="welcome-user">
+                    <h2>Hello again, {{ username.capitalize() }}</h2>
+                    <p>Press the add button to create a list of books 
+                        that make you happy now or can bring joy in the future. </p>
+                        <br>
+                    <p>The lists are for you so create one and fill it whatever books take your fancy.</p>
+                </div>
+            {% endif %}
+        </div>
+	</div>
 {% endblock %}
