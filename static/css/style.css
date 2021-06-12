@@ -54,10 +54,8 @@ nav ul a:hover {
     color: #fafafa;
 }
 
-#mobile-demo {
-    background: rgb(185,175,202);
-    background: -o-radial-gradient(circle, rgba(185,175,202,1) 0%, rgba(121,82,191,1) 100%);
-    background: radial-gradient(circle, rgba(185,175,202,1) 0%, rgba(121,82,191,1) 100%);
+#mobile {
+    background: rgb(216,67,21);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -819,39 +817,22 @@ footer {
                 transform: translateY(80px);
     }
 }
-
 .flashes p {
     line-height: 35px;
     font-size: 1.4rem;
 }
-@media screen and (min-width: 1400px) {
+
+@media screen and (max-width: 972px) {
     body {
-        background: url("/static/images/new-bg.jpg");
-        background-size: cover;
+        background:  url("/static/images/bg-mob.png");
         background-repeat: no-repeat;
-    }
-
-    .intro-img {
-        height: 500px;
-        width: 500px;
-    }
-    .book-heading img {
-        height: 500px;
-        width: 330px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .quotes {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+        background-size: cover;
     }
 }
 
 @media screen and (max-width: 1100px) {
     body {
-        background:  url("/static/images/bg-tab.png");
+        background:  url("/static/images/bg-mob.png");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -870,13 +851,31 @@ footer {
     }
 }
 
-@media screen and (max-width: 972px) {
-    body {
-        background:  url("/static/images/bg-mob.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+@media screen and (min-width: 1200px) {
+    .quotes {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
     }
 }
+
+@media screen and (min-width: 1400px) {
+    body {
+        background: url("/static/images/new-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .intro-img {
+        height: 500px;
+        width: 500px;
+    }
+    .book-heading img {
+        height: 500px;
+        width: 330px;
+    }
+}
+
 
 @media screen and (max-width: 576px) {
     .logo-name {
@@ -978,5 +977,5 @@ footer {
     .modal-books {
         max-height: 75%;
     }
-
+    }
 }

@@ -3,20 +3,20 @@ All booked is an online platform for people who love to read.
 Our users are able to create an account that gives them access to a self curated collection of books. 
 Users are able create personalised book lists that can be shared with other users. All booked stems from a book and discussion club that I used to attend.  
 
-![alt text](insert file path here "Multi device mock up")
+![alt text](static/images/Multi-device-mockup.PNG "Multi device mock up")
 [Please see the deployed site on Heroku here](https://all-booked-ms3.herokuapp.com/)
+
+
 [Please see the repository on github here](https://marijoke.github.io/all-booked-ms3/)
 
 ## UX
 This website is for:
-- People who 
-- People who want 
-- People interested 
-- People with a specific interest
+- People who enjoy reading books
+- People who want to curate their collection
+- People interested in writing notes or reviews ion the books they have read.
+- People interested in getting new book recommendations.
+- Companies that may want to use affiliate links for the books linked to stores. 
 
-The website is easy to manoeuvre using buttons and the drop-down menu. 
-
-I created the back of my cards to tie in with the theme and the brand created. This presents a clean uniformed look to the player. 
 
 ### Wireframes
 I created wireframes using [Balsamiq](https://balsamiq.com/)
@@ -25,36 +25,43 @@ I created wireframes using [Balsamiq](https://balsamiq.com/)
 
 ### Fonts 
 The fonts chosen for the website are:
+[Poppins](https://fonts.google.com/specimen/Poppins?query=popp#glyphs) was used for the body offering a Geometric sans serif typeface that is clear to read at every size.
+[Nunito](https://fonts.google.com/specimen/Nunito?query=nunito#standard-styles) was used for the All booked logo. Nunito is a well balanced sans serif typeface superfamily.
 
 ### Colours
-I used [Coolers](https://coolors.co/) to look up suitable colour schemes. I wanted colours that complimented each other but were also bold, warm and inviting.
+I used [Coolers](https://coolors.co/) to look up suitable colour schemes. I wanted colours that complimented each other but were also bold. My selection was limited due to using Materialize which has a selected range of colours that can be added. 
 
-![alt text](ADD LINK TO PALETTE "Colours")
+![alt text](static/images/MS3-colours.png "Colours")
 
 ## User Stories 
-- As an existing 
-- As a potential 
-- As an existing 
-- As a potential
+- As an existing reader of books, I want somewhere I can see the books I've read in one place 
+- As a potential user I want to find new books to read or add to my collection
+- As a potential user I want to be able to buy a book that interests me quickly
+- As a potential user I want to be able to build relationships with the people that share books via the website. 
+- As a user I want something easy to use with no jargon
+- As a potential user I want something that looks fun and playful
 
 ## Features
 ### Existing Features
-- Collapsible Navigation menu – allows players to move between pages with ease regardless of the size of their device.
-- Footer – features social media links to the Mari Mems social pages for direct contact with the company. Mari Mems uses their socials to provide players with updates and the newest memory games. 
+- Collapsible Navigation menu – Users are able to move between pages with ease regardless of the size of their device.
+- Footer – features social media links.
 - Mobile First design – allows users to view the website across multiple platforms without compromising usability.
-- Alternative text - All images including feature alternative text to ensure website is accessible for those with visual impairments.
-- Memory game - Created using JavaScript to create a board with cards that flip over and stay up when matched
-- Read more/less button - This allows players to get more information on what they are interested in rather than filling the screen with large amounts of text. 
+- User account - Users data are save and encrypted withing their own personal account.
+- list- Users can create a list of preferred books in the account that can be edited, deleted and new ones can be added.
 ### Features Left to Implement
-- Additional levels - The game currently has three levels
-- Additional memory games - I have created a memory brand so would like to add other types of memory games.
-- Points stystem  - so players can see how many points they have earned over the course of the game.
-- Timer - To show players how long it took them to solve the puzzle. 
-- Scoreboard - They are then able to challenge themselves by trying to beat their last time.
-- Compatibility for Safari - Found a lont of bugs using the site on apple devices.
+- Like/ voting abilities
+- Chat integration to allow users to discuss books in one place
+- Search bar that allows users to search the databas for previously seen books
+- Book of the month blog 
 ## Technologies Used
 - HTML5 
 - CSS3
+- Python
+- Javascript
+- Mongodb
+- Materialize
+- Flask
+- jQuery
 - 
 - [Bootstrap 4.5.3](https://getbootstrap.com/)
     - Used to simplify layouts and create consistency of design while enabling responsiveness. 
@@ -84,7 +91,7 @@ My project has responded well to testing in various browsers on across multiple 
     - [Safari](https://www.apple.com/uk/safari/)
     - [Duck Duck go](https://duckduckgo.com/)
 
-For more testing across multiple devices please see the [Mari Mems Tests](/workspace/MSP2-MemoryGame/MariMemsTests.md)
+For more testing across multiple devices please see the [All booked gets tested](/workspace/all-booked-ms3/All-booked-gets-tested.md)
 
 ## Deployment
 
