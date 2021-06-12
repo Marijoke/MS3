@@ -25,8 +25,6 @@ body {
 ::-webkit-scrollbar {
 	width: 0px;
 }
-
-/*----------------- BASE TEMPLATE -------------------*/
 /* Navbar */
 nav {
   background: transparent;
@@ -182,7 +180,7 @@ footer {
     margin: 10px auto;
 }
 
-/*--------------- GENERAL CONTAINER -----------------*/
+/* MAIN CONTAINER */
 .general-container {
     height: 80%;
     width: 80%;
@@ -220,7 +218,7 @@ footer {
     margin: 0 0 0 5px;
 }
 
-/*--------------- SIGN UP / LOGIN -----------------*/
+/* SIGN UP / LOGIN */
 .container-ilustration,
 .container-login {
     position: relative;
@@ -288,7 +286,7 @@ footer {
     cursor: pointer;
 }
 
-/*----------------- PROFILE -------------------*/
+/* My books */
 #profile-user {
     position: absolute;
     top: 5px;
@@ -364,7 +362,7 @@ footer {
     display: none;
 }
 
-/*----------------- VIEW BOOK -------------------*/
+/* VIEW BOOK */
 .book-heading img {
     height: 375px;
     width: 250px;
@@ -454,7 +452,7 @@ footer {
             transform: scale(0.9);
 }
 
-/*----------------- BEST BOOKS -------------------*/
+/* BEST BOOKS */
 .list-title {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -536,7 +534,7 @@ footer {
     list-style-type: circle !important;
 }
 
-/*----------------- VIEW LIST -------------------*/
+/* VIEW LIST */
 .container-book-lists h1 {
     font-size: 3rem;
     font-family: 'Nunito';
@@ -588,132 +586,7 @@ footer {
     overflow-x: hidden;
 }
 
-/*----------------- DISCOVER -------------------*/
-.container-discover {
-    margin: 0 5px;
-    padding: 0;
-    height: calc(100% - 145px);
-    overflow: scroll;
-}
-
-.list-title h3 {
-    font-size: 0.8rem;
-    margin: 0 20px 0 0;
-    font-style: italic;
-} 
-
-.container-search {
-    margin-top: 80px;
-}
-
-.container-search form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #fff;
-    padding-right: 5px;
-    padding-left: 5px;
-    border-radius: 15px;
-    -webkit-box-shadow: 2px 5px 20px -5px rgba(0,0,0,0.25);
-            box-shadow: 2px 5px 20px -5px rgba(0,0,0,0.25);
-}
-
-.container-search i {
-    height: 35px;
-    width: 50px;
-    border-radius: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    outline: none;
-    cursor: pointer;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s
-}
-
-.container-search button {
-    margin: 5px;
-    border: none;
-    background: transparent;
-}
-
-.container-search a {
-    margin-right: 15px;
-}
-
-.container-search i:hover {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
-}
-
-#search {
-    border-bottom: none;
-    margin: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-/*----------------- ERROR -------------------*/
-#error {
-    background: #fff;
-}
-
-.container-error {
-    max-height: 75vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-
-.container-error img{
-    -o-object-fit: contain;
-       object-fit: contain;
-    max-width: 100vw;
-    max-height: 70vh;
-}
-
-.btn-back {
-    width: 280px;
-    height: 50px;
-    margin: 0 auto;
-    margin-top: 30px;
-    border-radius: 3px;
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    -o-transition: transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
-}
-
-.btn-back p {
-    text-align: center;
-    line-height: 50px;
-    font-size: 1.05rem;
-    font-weight: 500;
-}
-
-.btn-back span {
-    font-weight: 600;
-}
-
-.error-text {
-    text-align: center;
-}
-/*----------------- MODALS -------------------*/
+/* MODAL */
 /* Create and edit modal */
 .container-modal,
 .container-modal-list,
@@ -904,7 +777,7 @@ footer {
     min-height: 375px !important;
 }
 
-/*----------------- FLASHES -------------------*/
+/* FLASHES */
 .flashes {
     position: relative;
     text-align: center;
@@ -951,8 +824,6 @@ footer {
     line-height: 35px;
     font-size: 1.4rem;
 }
-
-/*----------------- MEDIA SCREENS -------------------*/
 @media screen and (min-width: 1400px) {
     body {
         background: url("/static/images/new-bg.jpg");
@@ -997,21 +868,11 @@ footer {
     .intro-text p {
         font-size: 1.2rem;
     }
-
-    .container-error {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
-
-    .container-error img{
-        max-width: 700px;
-    }
 }
 
 @media screen and (max-width: 972px) {
     body {
-        background:  url("/static/images/new-bg.jpg");
+        background:  url("/static/images/bg-mob.png");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -1108,15 +969,6 @@ footer {
         font-size: 2.5rem;
         margin-top: 0;
     }
-
-    .container-error img{
-        max-width: 300px;
-    }
-
-    .error-text {
-        font-size: 2.4rem;
-    }
-}
 
 @media screen and (max-height: 415px) {
     .general-container {
